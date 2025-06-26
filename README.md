@@ -1,12 +1,31 @@
-# React + Vite
+# Portfolio - Milutin Jokić
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Ovo je portfolio web sajt za Milutina Jokića, licenciranog fitnes trenera sa DIF-a. Sajt je izrađen u React-u sa modernim i profesionalnim dizajnom, fokusom na jasnoću i dobar UX.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Funkcionalnosti
 
-## Expanding the ESLint configuration
+- **Početna stranica** sa kratkim predstavljanjem i linkom ka uslugama
+- **O meni** - detaljnije informacije o treneru i njegovoj licenci
+- **Usluge** - opis individualnih treninga, online treninga i plana ishrane
+- **Kontakt** - forma za kontakt i osnovne informacije
+- **Responsive dizajn** za mobilne uređaje i desktop
+- Animacije i efekti za bolje korisničko iskustvo
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## Tehnologije
+
+- React
+- React Router DOM za navigaciju
+- CSS sa animacijama i prilagođenim stilovima
+
+---
+
+## Instalacija i pokretanje lokalno
+
+1. Klonirajte repozitorijum:
+
+```bash
+git clone https://github.com/tvojgithubusername/portfolio-milutin-jokic.git
