@@ -1,0 +1,44 @@
+/* Globalno za telo i html */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden; /* VAŽNO: sprečava horizontalni skrol */
+}
+
+/* Root kontejner */
+#root {
+  width: 100vw;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  background-color: #000;
+  color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  overflow-x: hidden; /* Dodaj i ovde kao dodatnu zaštitu */
+  box-sizing: border-box; /* da padding/margin ne proširuju širinu */
+}
+
+/* Glavni layout */
+.main-layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  max-width: 100vw; /* dodatno ograničava širinu */
+  overflow-x: hidden;
+}
+
+main {
+  flex-grow: 1;
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+/* Takođe, proveri da li negde imaš element sa fiksnom širinom ili negativnim marginama koje "vire" izvan ekrana.
+Ako imaš flex elemente, postavi im: */
+* {
+  box-sizing: border-box;
+}
+
+/* Na primer, ako koristiš flex-wrap i gap, proveri da li je gap kompatibilan sa širinskim postavkama. */

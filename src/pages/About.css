@@ -1,0 +1,92 @@
+.about-section {
+  padding: 60px 40px;
+  background: linear-gradient(135deg, #0a0a0a, #222);
+  color: #eee;
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.about-container {
+  max-width: 800px;
+  line-height: 1.8;
+  background-color: rgba(30, 30, 30, 0.7);
+  padding: 30px 40px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+  animation: fadeInUp 1s ease forwards;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.about-container h1 {
+  font-size: 2.8rem;
+  margin-bottom: 25px;
+  border-bottom: 3px solid #555;
+  padding-bottom: 12px;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 1px;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.8);
+}
+
+.about-container p {
+  margin-bottom: 25px;
+  color: #ccc;
+  font-size: 1.15rem;
+  line-height: 1.6;
+  transition: color 0.3s ease;
+}
+
+.about-container p:hover {
+  color: #fff;
+}
+
+.cv-btn {
+  background-color: white;
+  color: black;
+  padding: 10px 18px;
+  border-radius: 6px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.15);
+  cursor: pointer;
+}
+.cv-btn:hover {
+  background-color: #ddd;
+}
+
+.certificate {
+  margin-bottom: 30px;
+  color: #bbb;
+  font-style: italic;
+  font-size: 1rem;
+  letter-spacing: 0.03em;
+  text-align: center;
+  user-select: none;
+}
+
+.certificate-img {
+  margin-top: 10px;
+  max-width: 100%;
+  border: 2px solid #666;
+  border-radius: 14px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.8);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  cursor: pointer;
+}
+
+.certificate-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 30px rgba(255, 255, 255, 0.25);
+}

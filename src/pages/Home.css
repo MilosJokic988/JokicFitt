@@ -1,0 +1,200 @@
+.home-section {
+  padding: 60px 40px;
+  background: linear-gradient(135deg, #121212, #1e1e1e);
+  color: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.home-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  width: 100%;
+  animation: fadeSlideUp 1s ease forwards;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+@keyframes fadeSlideUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.home-text {
+  flex: 1;
+  min-width: 280px;
+}
+
+.home-text h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  color: #fff;
+  font-weight: 700;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+  animation: fadeInDelay 1s ease forwards;
+  opacity: 0;
+  animation-delay: 0.3s;
+}
+
+.home-text h2 {
+  font-size: 1.5rem;
+  color: #bbb;
+  margin-bottom: 20px;
+  font-weight: 500;
+  animation: fadeInDelay 1s ease forwards;
+  opacity: 0;
+  animation-delay: 0.6s;
+}
+
+.home-text p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  color: #999;
+  line-height: 1.5;
+  animation: fadeInDelay 1s ease forwards;
+  opacity: 0;
+  animation-delay: 0.9s;
+}
+
+@keyframes fadeInDelay {
+  to {
+    opacity: 1;
+  }
+}
+
+.home-btn {
+  padding: 14px 28px;
+  background-color: #fff;
+  color: #000;
+  font-weight: 700;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.4s, transform 0.3s;
+  box-shadow: 0 6px 10px rgba(255, 255, 255, 0.2);
+  animation: fadeInDelay 1s ease forwards;
+  opacity: 0;
+  animation-delay: 1.2s;
+}
+
+.home-btn:hover {
+  background-color: #ddd;
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.35);
+}
+
+.home-image img {
+  max-width: 350px;
+  border-radius: 20px;
+  border: 3px solid #fff;
+  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.15);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  margin-right: 200px;
+}
+
+.home-image img:hover {
+  transform: scale(1.07) rotate(1deg);
+  box-shadow: 0 20px 40px rgba(255, 255, 255, 0.3);
+}
+
+@media (max-width: 768px) {
+  .home-image img {
+    max-width: 250px; /* smanjena slika na telefonu */
+    margin-right: 40px; /* manje pomeranje udesno */
+    transition: transform 0.4s ease, box-shadow 0.4s ease, margin-right 0.4s ease;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-image img {
+    max-width: 200px; /* još manja slika na najmalim ekranima */
+    margin-right: 20px; /* manje pomeranje */
+  }
+}
+.clickable-image {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.clickable-image:hover {
+  transform: scale(1.02);
+}
+
+.image-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  cursor: pointer;
+}
+
+.image-overlay img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+  object-fit: contain;
+}
+
+.extra-images-section {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;  /* Centriraj horizontalno */
+  gap: 40px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.image-text-block {
+  text-align: center;
+}
+
+.image-text-block img {
+  max-width: 200px;
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 12px;
+  box-shadow: 0 4px 12px rgba(255 255 255 / 0.15);
+  transition: transform 0.3s ease;
+}
+
+.image-text-block img:hover {
+  transform: scale(1.05);
+}
+
+.image-description {
+  font-size: 1.1rem;
+  color: #ddd;
+  font-weight: 600;
+  line-height: 1.3;
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+/* Animacija fade in */
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in-section.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
